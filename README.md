@@ -156,3 +156,26 @@ pm2 ls
 pm2 restart <id_no>
 ```
 👉 Restart your specific app using its PM2 ID to apply the latest version.
+
+
+
+# To Install SSL Cerificate 
+👉 Step - 1
+
+```bash
+sudo apt update
+```
+
+👉 Step - 2
+
+```bash
+sudo apt install certbot python3-certbot-nginx -y
+```
+
+👉 Step - 3
+
+```bash
+sudo certbot --nginx -d "domain name" -d www."domain name"
+```
+
+
